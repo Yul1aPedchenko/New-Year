@@ -6,28 +6,100 @@
     <title>New Year</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600;700&display=swap"    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600;700&display=swap"    rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style/reset.css">
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-box container">
-            <a href="index.html">
-                <img class="logo" src="img/logo.png" alt="logo">
+    <header class="header__section">
+        <div class="header__wrap container">
+            <a href="index.html" class="header__wrap">
+                <img class="header__logo" src="img/logo.png" alt="logo">
             </a>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-item-link" href="index.html">Home</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-item-link" href="#">RSVP</a>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">RSVP</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+    <main>
+        <section class="hero__section">
+            <div class="container">
+                <h1 class="hero__title">‘Tis the Season for a Celebration</h1>
+                <p class="hero__text">Moreno Family Christmas Party Dec 19, 2035</p>
+            </div>
+        </section>
+        <section class="advantages__section">
+            <div class="container">
+                <h2 class="advantages__title">Please join us for a jolly night of food, drinks, eggnog and mistletoe!</h2>
+                <ul class="adventages__list">
+                    <li class="adventages__item">
+                        <img class="adventages__img" src="img/toy.png" alt="toy">
+                        <h3 class="adventages__sub-title">What?</h3>
+                        <p class="adventages__sub-text">We'll be serving a full meal and have the house decked out</p>
+                    </li>
+                    <li class="adventages__item">
+                        <img class="adventages__img" src="img/box.png" alt="box">
+                        <h3 class="adventages__sub-title">Where?</h3>
+                        <p class="adventages__sub-text">500 Terry Francine Street San Francisco, CA 94158</p>
+                    </li>
+                </ul>
+                <div class="adventages__item adventages__item--elf">
+                    <img src="img/elf.png" alt="elf">
+                    <div class="adventages__text-wrap">
+                        <p class="adventages__sub-text">Dec 19, 2035, 7:00 PM</p>
+                    </div>
+                    <button class="adventages__btn">RSVP</button>
+                </div>
+            </div>
+        </section>
+        <section class="form__section">
+            <div class="container">
+                <img class="form__img" src="img/glasses.png" alt="">
+                <h3 class="form__title">No need to bring anything other than yourselves. We can’t wait to see you there!</h3>
+                <div class="form__text-wrap">
+                    <h4 class="form__sub-title">Contact us</h4>
+                    <p class="form__sub-text">Call Steve or Marisol at 123-456-7890 or leave us a message:</p>
+                </div>
+                <form class="form__form">
+                    <input class="form__input" type="name" placeholder="Full Name">
+                    <input class="form__input" type="phone" placeholder="Phone">
+                    <input class="form__input form__input--big" type="text" placeholder="Add a message...">
+                    <button class="form__btn" type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer__title">
+        <div class="container">
+            <div class="footer__social-net">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <svg class="footer__icon">
+                            <use href="img/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </li>
+                    <li class="footer__item">
+                        <svg class="footer__icon">
+                            <use href="img/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </li>
+                    <li class="footer__item">
+                        <svg class="footer__icon">
+                            <use href="img/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer__text">© 2035 Moreno Christmas</p>
+        </div>
+    </footer>
 </body>
 </html>
